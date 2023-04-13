@@ -37,6 +37,9 @@ stdenv.mkDerivation {
     for i in /usr /sw /opt /pkg; do 
       substituteInPlace ./setup.py --replace $i /no-such-path
     done
+    for i in Lib/plat-*/regen; do
+      substituteInPlace $i --replace /usr/include/ ${stdenv.gcc.libc}/include/
+    done
   ";
   
   postInstall = "
