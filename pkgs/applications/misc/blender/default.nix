@@ -18,6 +18,7 @@ stdenv.mkDerivation {
   # or openEXR is broken. I think OpenEXR should use include "" isntead of <> to
   # include files beeing in the same directory
   buildPhase = "
+    sed -i -e \"s/^platform.*$/platform = 'linux2'/\" SConstruct
     sed -i -e \"s=##### END SETUP ##########=env['CPPFLAGS'].append(os.getenv('CPPFLAGS').split(':'))\\n##### END SETUP ##########=\" SConstruct\n"
     + " CPPFLAGS=-I$openexr/include/OpenEXR"
     + " scons PREFIX=\$out/nix-support"
