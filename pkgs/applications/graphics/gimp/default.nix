@@ -6,7 +6,7 @@
 stdenv.mkDerivation {
   name = "gimp-2.4.3";
   src = fetchurl {
-    url = ftp://ftp.gtk.org/pub/gimp/v2.4/gimp-2.4.3.tar.bz2;
+    url = http://web.archive.org/web/20150912102509/https://download.gimp.org/pub/gimp/v2.4/gimp-2.4.3.tar.bz2;
     sha256 = "1m9gdm6wa33x1bymy3c2d006ks0acq1y8a94rc4401f6mrw8jj8b";
   };
   

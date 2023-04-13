@@ -15,7 +15,7 @@ stdenv.mkDerivation {
   name = "inkscape-0.45";
 
   src = fetchurl {
-    url = mirror://sourceforge/inkscape/inkscape-0.45.1.tar.gz;
+    url = http://web.archive.org/web/20070722152603/http://umn.dl.sourceforge.net/sourceforge/inkscape/inkscape-0.45.1.tar.gz;
     sha256 = "1y0b9bm8chn6a2ip99dj4dhg0188yn67v571ha0x38wrlmvn4k0d";
   };
 

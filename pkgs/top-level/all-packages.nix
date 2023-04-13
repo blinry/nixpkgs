@@ -3062,7 +3062,7 @@ rec {
   perlXMLSimple = import ../development/perl-modules/generic perl {
     name = "XML-Simple-2.14";
     src = fetchurl {
-      url = http://nix.cs.uu.nl/dist/tarballs/XML-Simple-2.14.tar.gz;
+      url = http://tarballs.nixos.org/XML-Simple-2.14.tar.gz;
       md5 = "f321058271815de28d214c8efb9091f9";
     };
     propagatedBuildInputs = [perlXMLParser];

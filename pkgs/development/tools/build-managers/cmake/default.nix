@@ -4,7 +4,7 @@ stdenv.mkDerivation {
   setupHook = ./setup-hook.sh;
 
   src = fetchurl {
-    url = http://www.cmake.org/files/v2.4/cmake-2.4.7.tar.gz;
+    url = http://web.archive.org/web/20151020051501/http://www.cmake.org/files/v2.4/cmake-2.4.7.tar.gz;
     sha256 = "0mkx23s7zq48hzzzw3vbzsfzfz3rjsiwgf3i00xawcxrjjrgxm9g";
   };
 

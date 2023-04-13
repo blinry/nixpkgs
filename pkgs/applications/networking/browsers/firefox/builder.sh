@@ -1,5 +1,16 @@
 source $stdenv/setup
 
+patchPhase() {
+    if test -z "$patchPhase" -a -z "$patches"; then return; fi
+    header "patching sources"
+    startLog "patch"
+    patchW
+    stopLog
+    stopNest
+    KERNEL_VERSION=$(uname -r|sed 's/\([0-9]*\.[0-9]*\)\..*/\1/')
+    cp security/coreconf/Linux2.6.mk security/coreconf/Linux$KERNEL_VERSION.mk
+}
+
 postInstall=postInstall
 postInstall() {
 

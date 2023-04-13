@@ -3,7 +3,7 @@ stdenv.mkDerivation {
   name = "blender-2.45";
 
   src = fetchurl {
-    url = http://download.blender.org/source/blender-2.45.tar.gz;
+    url = http://web.archive.org/web/20230312114801/https://download.blender.org/source/blender-2.45.tar.gz;
     sha256 = "1bi7j1fcvrpb96sjpcbm4sldf359sgskfhv7a8pgcxj0bnhp47wj";
   };
 

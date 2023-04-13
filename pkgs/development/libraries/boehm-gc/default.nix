@@ -3,7 +3,7 @@
 stdenv.mkDerivation {
   name = "boehm-gc-7.0";
   src = fetchurl {
-    url = http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/gc-7.0.tar.gz;
+    url = http://web.archive.org/web/20150915161251/http://www.hboehm.info/gc/gc_source/gc-7.0.tar.gz;
     sha256 = "0nqy0462ainp79fjmx5lgr89s2d433fggr3n9d1p09xq77lwc2nj";
   };
   meta = {

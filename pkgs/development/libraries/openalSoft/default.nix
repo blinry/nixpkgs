@@ -7,7 +7,7 @@ stdenv.mkDerivation {
   name = "openal-soft-1.1.93";
 
   src = fetchurl {
-    url = http://kcat.strangesoft.net/openal-releases/openal-soft-1.1.93.tar.bz2;
+    url = http://web.archive.org/web/20171015183058/http://kcat.strangesoft.net/openal-releases/openal-soft-1.1.93.tar.bz2;
     sha256 = "162nyv4jy6qzi7s5q3wpdawfph6npyn1n4wjf21haxdxq0mmp6l7";
   };
 

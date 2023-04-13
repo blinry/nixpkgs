@@ -6,7 +6,7 @@ assert sslSupport -> openssl != null;
 stdenv.mkDerivation {
   name = "curl-7.17.1";
   src = fetchurl {
-    url = http://curl.haxx.se/download/curl-7.17.1.tar.bz2;
+    url = http://web.archive.org/web/20100825041424/http://curl.haxx.se/download/curl-7.17.1.tar.bz2;
     sha256 = "0yz50r75jhfr2ya6wqi6n90bn4ij30299pjglmlckzq6jp28wrkz";
   };
   buildInputs =
