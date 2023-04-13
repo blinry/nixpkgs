@@ -12,6 +12,8 @@ stdenv.mkDerivation {
   };
 
   buildInputs = [cmake alsaLib];
+
+  configurePhase = "cmake . -DCMAKE_INSTALL_PREFIX=$out";
   
   meta = {
       description = "openal alternative";
